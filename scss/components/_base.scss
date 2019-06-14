@@ -1,0 +1,137 @@
+$base-body-background:                           #fff ;
+$base-body-font-family:                          $global-font-family;
+$base-body-font-weight:                          normal;
+$base-body-font-size:                            $global-font-size;
+$base-body-color:                                #000;
+$body-secondary-color:                           #fff;
+$body-secondary-background:                      #F2F7FF;
+
+
+$base-link-color:                                #ffffff;
+$base-link-text-decoration:                      none;
+$base-link-hover-color:                          #ffffff;
+$base-link-hover-text-decoration:                underline;
+
+$base-margin-vertical:                           15px;
+
+$base-list-padding-left:                         30px;
+
+$base-hr-margin-vertical:                        15px;
+$margin-15px:                                    15px;
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $base-body-font-family;
+  font-size: $base-body-font-size;
+  font-weight: $base-body-font-weight;
+  background: $base-body-background;
+  color: $base-body-color;
+  height: 100%;
+}
+
+body { 
+  margin: 0; 
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  &.mobile {
+    max-width: 1110px;
+  }
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.breadcrumbs {
+  color: $breadcrumbs-color;
+  font-size: $small-fs;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a:active,
+a:hover { outline: none; }
+
+a, .link {
+    text-decoration: $base-link-text-decoration;
+    cursor: pointer;
+}
+
+// a:hover, link:hover {
+//     color: $base-link-hover-color;
+// }
+
+
+img, video {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+p,
+ul,
+h1, h2, h3, h4, h5, h6
+ol,
+figure { margin: 0; }
+
+p {
+  margin: 0;
+}
+
+// * + p,
+// * + ul,
+// * + ol,
+// * + figure { margin-top: $base-margin-vertical; }
+
+li {
+    list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul > li > ul,
+ul > li > ol,
+ol > li > ol,
+ol > li > ul { margin: 0; }
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    margin: 0;
+    border: 0;
+}
+
+// @for $i from 1 through 5 {
+//  .block-#{$i} { 
+//    width: 20px * $i; 
+//    height: 40px;
+//    background-color: tomato;
+//  }
+// };

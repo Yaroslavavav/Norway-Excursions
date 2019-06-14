@@ -1,0 +1,90 @@
+.contacts {
+  padding: 0;
+}
+
+.contacts > li {
+  display: flex;
+  align-items: center;
+  font-size: $global-font-size;
+  font-weight: $bold;
+}
+
+.phone-image {
+	width: 17px;
+	margin-right: 10px;
+}
+
+.logo {
+	font-family: $global-font-family;
+	font-size: $logo-fs;
+	color: $logo-color;
+	font-weight: $bold;
+	&-footer {
+		color: $body-secondary-color;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.loupe {
+	width: 18px;
+	margin-right: 35px;
+}
+
+.nav-right {
+	display: flex;
+	align-items: center;
+}
+
+.account {
+	display: flex;
+	align-items: center;
+	&-avatar {
+		width: 29px;
+	height: 29px;
+	border-radius: 50%;
+	margin-right: 12px;
+	background-color: #984212;
+	}
+	&-name {
+		font-weight: $bold;
+	}
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar {
+	&-center {
+		text-align: center;
+	}
+	&-nav {
+		padding: 0;
+	}
+  &-nav>li {
+  	display: inline-block;
+  	font-size: $navigation-menu-fs;
+  }	
+}
+
+.menu-button {
+	  color: $navbar-color;
+  	padding: 0 15px;
+  	font-weight: $bold;
+  	&:hover {
+  		color: $navbar-hover-color;
+  	}
+}
+
+// .account-avatar {
+// 	width: 29px;
+// 	height: 29px;
+// 	border-radius: 50%;
+// 	margin-right: 12px;
+// 	background-color: #984212;
+// }
+
+

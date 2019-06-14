@@ -1,0 +1,136 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-button-next {
+  color: blue;
+}
+.swiper-button-next.popular-tours {
+  background-color: red;
+  border-radius: 50%;
+  color: red;
+}
+
+.swiper-arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-button-nex.popular-tours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $body-secondary-color;
+  &:focus {
+   outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.swiper-button-pre.popular-tours {
+  display: flex;
+  justify-content: center;
+   margin-top: 10px;
+  position: absolute;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $body-secondary-color;
+  &:focus { 
+   outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+
+.swiper-slide.reviews {
+  width: 460px;
+}
+
+.swiper-container-reviews {
+  width: 1840px;
+}
+
+.swiper-button-nex.reviews {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  right: 45%;
+  border-radius: 50%;
+  background-color: $body-secondary-color;
+  &:focus {
+   outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.swiper-button-pre.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  left: 45%;
+  border-radius: 50%;
+  background-color: $body-secondary-color;
+  position: absolute;
+  &:focus { 
+   outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.arrows-box-reviews {
+  height: 80px;
+  position: relative;
+  padding-top: 30px;
+}
+
+.arrows-box-popular-tours {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 1300px;
+  margin: auto;
+  
+}

@@ -1,0 +1,50 @@
+$card-border-radius-each:                 40px;
+
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -17.5px;
+	// &-we-are {
+	// 	width: 50%;
+	// 	// border-radius: 50px;
+	// 	overflow: hidden;
+	// }
+	// &-col-2 {
+	// 	margin: 0 -9px;
+	// }
+}
+
+.grid-col-4 > .grid-item {
+	width: 25%;
+	padding: 0 17.5px;
+}
+
+
+.left-content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+.grid-item.we-are {		
+	overflow: hidden;
+  &:nth-child(1) {
+    border-radius: $card-border-radius-each 0 0 0;
+  }
+  &:nth-child(2) {
+    border-radius: 0 $card-border-radius-each 0 0;
+  }
+  &:nth-child(3) {
+    border-radius: 0 0 0 $card-border-radius-each;
+  }
+  &:nth-child(4) {
+    border-radius: 0 0 $card-border-radius-each 0;
+  }
+  &:nth-child(even) {
+  	margin-left: 18px;
+  }
+	&.vertical-margin {
+			padding-top: 18px;
+		}
+}

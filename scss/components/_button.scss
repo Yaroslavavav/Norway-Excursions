@@ -1,0 +1,50 @@
+$button-background-color:          #FF0032;
+$button-color:                     #fff;
+
+$hover-background-color:           #FFF;
+$hover-color:                      #000;
+
+
+.button {
+	display: inline-block;
+	background-color: $button-background-color;
+	font-weight: $bold;
+	border-radius: 30px;
+	padding: 20px 0;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	color: $button-color;
+	&:hover {
+   background-color: $hover-background-color;
+	 color: $hover-color;
+	 cursor: pointer;
+	}
+	&-hero {
+		padding-left: 85px;
+		padding-right: 85px;
+	}
+	&-search-tours {
+		padding-left: 100px;
+		padding-right: 100px;
+		&:hover {
+			background-color: $body-secondary-background;
+		}
+	}
+	&-popular-tours {
+		padding-left: 55px;
+		padding-right: 55px;
+	}
+	&-daily-tours {
+		padding-left: 65px;
+		padding-right: 65px;
+		&:hover {
+			background-color: $body-secondary-background;
+		}
+	}
+	&-subscribe {
+		padding-left: 65px;
+		padding-right: 65px;
+		margin: 0;
+	}
+}

@@ -1,0 +1,16 @@
+FONTS size:
+13 card breadcrumbs
+14 small 
+16 global 
+18 navigation menu
+20 card title
+24 footer title
+28 Logo
+30 Card price
+52 section title 
+90 hero title
+
+FONTS family: 
+
+Gilroy
+

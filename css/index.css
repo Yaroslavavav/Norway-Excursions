@@ -1,0 +1,1197 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  background: #fff;
+  color: #000;
+  height: 100%; }
+
+body {
+  margin: 0;
+  height: 100%; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.container {
+  overflow: hidden;
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  .container.mobile {
+    max-width: 1110px; }
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
+
+.footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
+
+.breadcrumbs {
+  color: #888EA0;
+  font-size: 14px; }
+
+.text-center {
+  text-align: center; }
+
+a:active,
+a:hover {
+  outline: none; }
+
+a, .link {
+  text-decoration: none;
+  cursor: pointer; }
+
+img, video {
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
+p,
+ul,
+h1, h2, h3, h4, h5, h6
+ol,
+figure {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+li {
+  list-style-type: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+ul > li > ul,
+ul > li > ol,
+ol > li > ol,
+ol > li > ul {
+  margin: 0; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  margin: 0;
+  border: 0; }
+
+.button {
+  display: inline-block;
+  background-color: #FF0032;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: #fff; }
+  .button:hover {
+    background-color: #FFF;
+    color: #000;
+    cursor: pointer; }
+  .button-hero {
+    padding-left: 85px;
+    padding-right: 85px; }
+  .button-search-tours {
+    padding-left: 100px;
+    padding-right: 100px; }
+    .button-search-tours:hover {
+      background-color: #F2F7FF; }
+  .button-popular-tours {
+    padding-left: 55px;
+    padding-right: 55px; }
+  .button-daily-tours {
+    padding-left: 65px;
+    padding-right: 65px; }
+    .button-daily-tours:hover {
+      background-color: #F2F7FF; }
+  .button-subscribe {
+    padding-left: 65px;
+    padding-right: 65px;
+    margin: 0; }
+
+.card {
+  max-width: 260px;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
+  .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px 18px 0 18px; }
+  .card-image {
+    height: 230px; }
+    .card-image-daily {
+      height: 175px; }
+    .card-image-we-are {
+      height: 170px;
+      width: 255px; }
+      .card-image-we-are > img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
+    .card-image > img {
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .card-daily-tours {
+    border: 1px solid #000;
+    margin-bottom: 35px; }
+  .card-review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .card-breadcrumbs {
+    color: #888EA0;
+    font-size: 13px;
+    margin: 0;
+    text-align: left; }
+  .card-title {
+    font-size: 20px;
+    color: #373F55;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: left; }
+  .card-text {
+    padding-bottom: 20px;
+    color: #464649;
+    text-align: left; }
+  .card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 18px 25px 18px; }
+  .card-price {
+    font-size: 30px;
+    color: #373F55; }
+
+.we-are-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.we-are-text {
+  max-width: 497px;
+  text-align: left;
+  color: #464649; }
+  .we-are-text > p {
+    padding-bottom: 30px; }
+
+.footer-links {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.link-block {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 7.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .link-block > .icons {
+    font-size: 13px; }
+  .link-block:hover {
+    color: #fff;
+    background-color: #FF0032;
+    cursor: pointer; }
+
+.rating_block {
+  width: 125px;
+  height: 25px; }
+
+.rating_block input[type="radio"] {
+  display: none; }
+
+.label_rating {
+  float: right;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(https://simplamarket.com/files/uploads/rating.png) no-repeat 50% 0;
+  cursor: pointer; }
+
+/*Пишем правила смены положения background-а*/
+.rating_block .label_rating:hover,
+.rating_block .label_rating:hover ~ .label_rating,
+.rating_block input[type="radio"]:checked ~ .label_rating {
+  background-position: 50% -25px; }
+
+.card-reviews {
+  width: 430px;
+  background-color: #fff;
+  border-radius: 40px; }
+
+.card-body-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 25px 20px; }
+
+.card-header-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .card-header-reviews > .reviews-avatar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px; }
+
+.avatar-image {
+  background-color: red;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+
+.reviews-person {
+  margin-left: 20px; }
+
+.person-name {
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px; }
+
+.card-content-reviews {
+  font-size: 14px;
+  padding: 20px 0;
+  text-align: left; }
+
+.card-link {
+  font-size: 14px;
+  color: #0F2D47;
+  text-decoration: underline;
+  font-weight: 700;
+  text-align: right; }
+
+.search-box {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 30px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.search-input {
+  background-color: #F2F7FF;
+  border-radius: 30px;
+  border: transparent;
+  padding: 20px 25px;
+  margin-top: 15px; }
+  .search-input:focus {
+    outline: none; }
+
+.subscribe-cell {
+  width: 350px;
+  padding-right: 15px; }
+
+.subscribe-input {
+  background-color: #F2F7FF;
+  border-radius: 30px;
+  border: transparent;
+  padding: 20px 20px 20px 25px;
+  margin-top: 15px;
+  margin-right: 15px;
+  width: 100%; }
+  .subscribe-input:focus {
+    outline: none; }
+
+.subscribe-box {
+  padding-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -17.5px; }
+
+.grid-col-4 > .grid-item {
+  width: 25%;
+  padding: 0 17.5px; }
+
+.left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 50%; }
+
+.grid-item.we-are {
+  overflow: hidden; }
+  .grid-item.we-are:nth-child(1) {
+    border-radius: 40px 0 0 0; }
+  .grid-item.we-are:nth-child(2) {
+    border-radius: 0 40px 0 0; }
+  .grid-item.we-are:nth-child(3) {
+    border-radius: 0 0 0 40px; }
+  .grid-item.we-are:nth-child(4) {
+    border-radius: 0 0 40px 0; }
+  .grid-item.we-are:nth-child(even) {
+    margin-left: 18px; }
+  .grid-item.we-are.vertical-margin {
+    padding-top: 18px; }
+
+.header {
+  margin: 35px 0; }
+  .header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 35px; }
+
+.contacts {
+  padding: 0; }
+
+.contacts > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700; }
+
+.phone-image {
+  width: 17px;
+  margin-right: 10px; }
+
+.logo {
+  font-family: "Gilroy", sans-serif;
+  font-size: 28px;
+  color: #0F2D47;
+  font-weight: 700; }
+  .logo-footer {
+    color: #fff; }
+  .logo:hover {
+    cursor: pointer; }
+
+.loupe {
+  width: 18px;
+  margin-right: 35px; }
+
+.nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .account-avatar {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-color: #984212; }
+  .account-name {
+    font-weight: 700; }
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.navbar-center {
+  text-align: center; }
+
+.navbar-nav {
+  padding: 0; }
+
+.navbar-nav > li {
+  display: inline-block;
+  font-size: 18px; }
+
+.menu-button {
+  color: #061E33;
+  padding: 0 15px;
+  font-weight: 700; }
+  .menu-button:hover {
+    color: #FF0032; }
+
+.section, .footer {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px; }
+  .section-title, .footer-title {
+    text-align: center;
+    font-size: 52px;
+    color: #061E33;
+    font-weight: 700;
+    margin-bottom: 65px; }
+  .section-hero, .footer-hero {
+    padding: 0;
+    color: #fff; }
+  .section-popular-tours, .footer-popular-tours {
+    background-color: #F2F7FF;
+    text-align: center;
+    padding-bottom: 90px; }
+  .section-daily-tours, .footer-daily-tours {
+    padding-bottom: 545px; }
+  .section-we-are, .footer-we-are {
+    padding-bottom: 90px; }
+  .section-reviews, .footer-reviews {
+    background-color: #F2F7FF;
+    padding-bottom: 90px; }
+
+.background > img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.background-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.9;
+  background-color: rgba(17, 17, 17, 0.6); }
+
+.background-daily > img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.hero-title {
+  font-size: 90px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 215px; }
+
+.hero-content {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 215px; }
+
+.hero-title {
+  font-size: 90px;
+  font-weight: 700;
+  text-align: center; }
+
+.hero-text {
+  text-align: center;
+  font-weight: 400;
+  padding-top: 30px; }
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0; }
+
+.foreground-footer {
+  z-index: 1; }
+
+.footer-card-title {
+  color: #fff;
+  margin-bottom: 25px; }
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-top: 70px; }
+
+.footer-card {
+  width: 33.33%;
+  padding-bottom: 90px; }
+  .footer-card-socials {
+    text-align: center; }
+  .footer-card-logo {
+    text-align: right; }
+
+.footer-contacts {
+  max-width: 255px;
+  color: #F2F7FF;
+  font-size: 14px; }
+  .footer-contacts > li {
+    padding-bottom: 15px; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.swiper-button-next {
+  color: blue; }
+
+.swiper-button-next.popular-tours {
+  background-color: red;
+  border-radius: 50%;
+  color: red; }
+
+.swiper-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.swiper-button-nex.popular-tours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #fff; }
+  .swiper-button-nex.popular-tours:focus {
+    outline: none; }
+  .swiper-button-nex.popular-tours:hover {
+    cursor: pointer; }
+
+.swiper-button-pre.popular-tours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 10px;
+  position: absolute;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #fff; }
+  .swiper-button-pre.popular-tours:focus {
+    outline: none; }
+  .swiper-button-pre.popular-tours:hover {
+    cursor: pointer; }
+
+.swiper-slide.reviews {
+  width: 460px; }
+
+.swiper-container-reviews {
+  width: 1840px; }
+
+.swiper-button-nex.reviews {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  right: 45%;
+  border-radius: 50%;
+  background-color: #fff; }
+  .swiper-button-nex.reviews:focus {
+    outline: none; }
+  .swiper-button-nex.reviews:hover {
+    cursor: pointer; }
+
+.swiper-button-pre.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  left: 45%;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute; }
+  .swiper-button-pre.reviews:focus {
+    outline: none; }
+  .swiper-button-pre.reviews:hover {
+    cursor: pointer; }
+
+.arrows-box-reviews {
+  height: 80px;
+  position: relative;
+  padding-top: 30px; }
+
+.arrows-box-popular-tours {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 1300px;
+  margin: auto; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?43szzw");
+  src: url("../fonts/icomoon.eot?43szzw#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?43szzw") format("truetype"), url("../fonts/icomoon.woff?43szzw") format("woff"), url("../fonts/icomoon.svg?43szzw#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-instagram:before {
+  content: "\e900";
+  font-size: 14px; }
+
+.icon-phone:before {
+  content: "\e942"; }
+
+.icon-location:before {
+  content: "\e947"; }
+
+.icon-facebook:before {
+  content: "\ea90"; }
+
+.icon-twitter:before {
+  content: "\ea96"; }
+
+.search-bar {
+  height: auto;
+  width: auto;
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .search-bar input {
+    height: 32px;
+    width: 44px;
+    padding: 10px 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 44px;
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    color: transparent; }
+    .search-bar input::-webkit-input-placeholder {
+      color: transparent; }
+    .search-bar input:-ms-input-placeholder {
+      color: transparent; }
+    .search-bar input::-ms-input-placeholder {
+      color: transparent; }
+    .search-bar input::placeholder {
+      color: transparent; }
+    .search-bar input:invalid {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .search-bar input:hover {
+      border: 2px solid #FF0032;
+      -webkit-box-shadow: 0 0 2px 2px #EEE;
+      box-shadow: 0 0 2px 2px #EEE; }
+    .search-bar input:focus, .search-bar input:valid {
+      width: 300px;
+      outline: none;
+      cursor: auto;
+      background-color: #FFF;
+      color: #000; }
+      .search-bar input:focus::-webkit-input-placeholder, .search-bar input:valid::-webkit-input-placeholder {
+        color: #999; }
+      .search-bar input:focus:-ms-input-placeholder, .search-bar input:valid:-ms-input-placeholder {
+        color: #999; }
+      .search-bar input:focus::-ms-input-placeholder, .search-bar input:valid::-ms-input-placeholder {
+        color: #999; }
+      .search-bar input:focus::placeholder, .search-bar input:valid::placeholder {
+        color: #999; }
+      .search-bar input:focus + .search-icon, .search-bar input:valid + .search-icon {
+        z-index: 0;
+        right: 20px; }
+        .search-bar input:focus + .search-icon:after, .search-bar input:valid + .search-icon:after {
+          background-color: #CCC; }
+
+.search-icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  z-index: -1; }

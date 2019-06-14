@@ -1,0 +1,194 @@
+.card {
+	max-width: 260px;
+	overflow: hidden;
+	border-radius: 30px;
+	background-color: $body-secondary-color;
+  flex-grow: 1;
+  &-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px 18px 0 18px;
+  }
+  &-image {
+  	height: 230px;
+    &-daily {
+      height: 175px;
+    }
+    &-we-are {
+      height: 170px;
+      width: 255px;
+
+      &>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &>img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &-daily-tours {
+    border: 1px solid #000;
+    margin-bottom: 35px;
+  }
+  &-review {
+  	display: flex;
+  	align-items: center;
+  	padding-bottom: 20px;
+  	justify-content: space-between;
+  }
+  &-breadcrumbs {
+  	color: $breadcrumbs-color;
+  	font-size: $card-breadcrumbs-fs;
+  	margin: 0;
+    text-align: left;
+  }
+  &-title {
+  	font-size: $card-title-fs;
+  	color: $card-secondary-color;
+  	font-weight: $bold;
+  	padding-bottom: 10px;
+  	text-align: left;
+  }
+  &-text {
+  	padding-bottom: 20px;
+  	color: $card-text-color;
+  	text-align: left;
+  }
+  &-footer {
+  	display: flex;
+  	align-items: flex-end;
+  	justify-content: space-between;
+    padding: 0 18px 25px 18px;
+  }
+  &-price {
+  	font-size: $card-price-fs;
+  	color: $card-secondary-color;
+  }
+}
+
+.we-are-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.we-are-text {
+  max-width: 497px;
+  text-align: left;
+  color: $we-are-text-color;
+  &>p {
+    padding-bottom: 30px;
+  }
+}
+
+
+.footer-links {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.link-block {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $body-secondary-color; 
+  margin: 0 7.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &>.icons {
+    font-size: 13px;
+  }
+  &:hover {
+    color: $body-secondary-color;
+    background-color: #FF0032;
+    cursor: pointer;
+  }
+}
+
+
+.rating_block {
+  width: 125px;
+  height: 25px;
+}
+.rating_block input[type="radio"] {
+  display: none;
+}
+.label_rating {
+  float: right;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(https://simplamarket.com/files/uploads/rating.png) no-repeat 50% 0;
+  cursor: pointer;
+}
+/*Пишем правила смены положения background-а*/
+.rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+.rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+.rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+{
+  background-position: 50% -25px;
+}
+
+
+
+
+.card-reviews {
+  width: 430px;
+  background-color: $body-secondary-color;
+  border-radius: 40px;
+}
+
+.card-body-reviews {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  padding: 25px 20px;
+}
+
+.card-header-reviews {
+  display: flex;
+  justify-content: space-between;
+  &>.reviews-avatar {
+    display: flex;
+    margin-right: 30px;
+  }
+}
+
+.avatar-image {
+  background-color: red;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.reviews-person {
+  margin-left: 20px;
+}
+
+.person-name {
+  color: $base-body-color;
+  font-weight: $bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card-content-reviews {
+  font-size: $small-fs;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.card-link {
+  font-size: $small-fs;
+  color: #0F2D47;
+  text-decoration: underline;
+  font-weight: $bold;
+  text-align: right;
+}
+
