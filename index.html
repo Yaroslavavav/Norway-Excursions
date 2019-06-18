@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" lang="en" type="text/css" href="css/index.css">
@@ -23,8 +24,27 @@
               </li>
             </ul>
           </div><!-- contacts -->
+          <div class="logo-box">
           <a href="#" class="logo">The North.</a>
+          </div>
           <div class="nav-right">
+            <nav class="mobile-menu">
+            <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+            <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+            <div class="mobile-menu__container">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Home</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Search for tours</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Popular tours</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Daily tours</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">About us</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Reviews</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Daily tours</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Account</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Search on website</a></li>
+              </ul>
+            </div>
+          </nav>
             <div class="loupe">
               <!-- <i class="fas fa-search"></i> -->
               <div class="search-bar">
@@ -59,12 +79,16 @@
    <div class="background">
     <img src="images/hero-background.png" alt="hero-bg">
   </div>
+  <div class="container">
   <h1 class="hero-title">Norway Excursions</h1>
   <div class="hero-content">
     <p class="hero-text">We have years of experience. Whether you are traveling to Norway by plane, bus or cruise ship, our excursions are available and accessible for everyone.</p>
     <a href="#" class="button button-hero">View all tours</a>
   </div>
+</div><!-- container -->
 </section><!-- hero -->
+
+
 <section class="section section-search-tours">
  <h2 class="section-title">Search for tours</h2>
  <div class="container">
@@ -133,7 +157,7 @@
 <div class="container">
   <div class="swiper-container popular-tours">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div class="swiper-slide mobile">
       	<div class="card card-popular-tours">
           <div class="card-image">
             <img src="images/card-images/northern-lights-and-a-snowmobile.png" alt="tour-image">
@@ -422,7 +446,7 @@
     <img src="images/daily_tour_image.png" alt="dail_bg">
   </div>
   <div class="container">
-    <div class="grid grid-col-4">
+    <div class="grid grid-col-4 daily-tours">
       <div class="grid-item daily-tours">
        <div class="card card-daily-tours">
         <div class="card-image card-image-daily">
@@ -1245,9 +1269,6 @@
  </div><!-- container -->
 </div><!-- foreground -->
 </footer>
-
-
-
 
 </div><!-- wrapper -->
 

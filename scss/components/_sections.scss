@@ -133,4 +133,29 @@
 	}
 }
 
-
+@media ( max-width: 959px) {
+	.section {
+		padding: 70px 0;
+		&-search-tours {
+			padding-bottom: 150px;
+		}
+		&-daily-tours {
+			padding-bottom: 170px;
+		}
+		&-title {
+			font-size: $section-title-fs*0.5;
+		}
+	}
+	.hero-title {
+		padding-top: 60px;
+		font-size: $hero-title-fs*0.7;
+	}
+	.hero-content {
+		padding-bottom: 60px;
+	}
+	.search-tours-image {
+		position: absolute;
+		z-index: -2;
+		bottom: 0;
+	}
+}

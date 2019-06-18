@@ -192,3 +192,8 @@
   text-align: right;
 }
 
+@media  (max-width: 959px) {
+  .swiper-slide.mobile {
+    width: 50%;
+  }
+}

@@ -42,3 +42,22 @@
 	align-items: flex-end;
 	justify-content: center;
 }
+
+@media (max-width: 959px) {
+	.search-box {
+		justify-content: space-between;
+	}
+	.search-cell {
+		width: 45%;
+	}
+	.search-input {
+		width: 100%;
+	}
+}
+
+@media (max-width: 639px) {
+	.search-cell {
+		width: 100%;
+		margin-top: 10px;
+	}
+}

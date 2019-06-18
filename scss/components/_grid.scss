@@ -48,3 +48,34 @@ $card-border-radius-each:                 40px;
 			padding-top: 18px;
 		}
 }
+
+@media (max-width: 1240px) {
+  .grid.daily-tours {
+  	margin:0 -15px;
+  }
+
+	.grid-col-4 > .grid-item.daily-tours {
+	width: 33.33%;
+	padding: 0 15px;
+}
+	
+}
+
+@media (max-width: 959px) {
+  .grid.daily-tours {
+  	margin:0 -15px;
+  }
+
+	.grid-col-4 > .grid-item.daily-tours {
+	width: 50%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+}
+
+@media (max-width: 640px) {
+	.grid-col-4 > .grid-item.daily-tours {
+   width: 100%;
+}
+	
+}

@@ -41,7 +41,7 @@
   content: "\ea96";
 }
 
-
+@media (min-width: 961px) {
 $size: 20px;
 
 .search-bar {
@@ -116,3 +116,11 @@ $size: 20px;
   top: 8px;
   z-index: -1;
 }
+
+}
+@media (max-width: 960px) {
+  .search-bar {
+    display: none;
+  }
+}
+
