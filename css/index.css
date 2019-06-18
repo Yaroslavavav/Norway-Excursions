@@ -709,7 +709,8 @@ hr {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .search-cell {
-    width: 45%; }
+    width: 45%;
+    margin-top: 15px; }
   .search-input {
     width: 100%; } }
 
