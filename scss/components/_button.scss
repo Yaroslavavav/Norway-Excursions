@@ -48,3 +48,13 @@ $hover-color:                      #000;
 		margin: 0;
 	}
 }
+
+@media (max-width: 640px) {
+	.button {
+		&-subscribe {
+		padding-left: 35px;
+		padding-right: 35px;
+		margin: 0;
+	}
+	}
+}

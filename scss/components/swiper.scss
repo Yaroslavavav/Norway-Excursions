@@ -87,7 +87,7 @@
   align-items: center;
   width: 46px;
   height: 46px;
-  right: 45%;
+  right: 44%;
   border-radius: 50%;
   background-color: $body-secondary-color;
   &:focus {
@@ -104,7 +104,7 @@
   align-items: center;
   width: 46px;
   height: 46px;
-  left: 45%;
+  left: 44%;
   border-radius: 50%;
   background-color: $body-secondary-color;
   position: absolute;
@@ -138,5 +138,28 @@
   .arrows-box-popular-tours {
     display: none;
   }
-  
+  .swiper-button-pre.reviews {
+  left: 43%;
+  }
+  .swiper-button-nex.reviews {
+  right: 43%;
+  }
+}
+
+@media (max-width: 730px ) {
+   .swiper-button-pre.reviews {
+  left: 41%;
+  }
+  .swiper-button-nex.reviews {
+  right: 41%;
+  }
+}
+
+@media (max-width: 640px ) {
+   .swiper-button-pre.reviews {
+  left: 33%;
+  }
+  .swiper-button-nex.reviews {
+  right: 33%;
+  }
 }
