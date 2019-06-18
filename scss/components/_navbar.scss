@@ -95,13 +95,6 @@
 	display: none;
 }
 
-.header {
-	margin: 15px 0;
-	&-top {
-		padding: 0;
-		flex-wrap: wrap;
-	}
-}
 
 .logo-box {
 	position: absolute;
@@ -167,7 +160,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 60px;
+    top: 100px;
     left: 0;
     right: 0;
     z-index: 999;

@@ -1,9 +1,23 @@
 .header {
-	margin: 35px 0;
+	padding: 35px 0;
+	background-color: $base-body-background;
 	&-top {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 35px;
 }
+}
+
+@media (max-width: 959px) {
+	.header {
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	margin: 0; 
+	&-top {
+		padding: 0;
+		flex-wrap: wrap;
+	}
+ }
 }

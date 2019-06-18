@@ -773,7 +773,8 @@ hr {
     width: 100%; } }
 
 .header {
-  margin: 35px 0; }
+  padding: 35px 0;
+  background-color: #fff; }
   .header-top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -785,6 +786,17 @@ hr {
     -ms-flex-align: center;
     align-items: center;
     padding-bottom: 35px; }
+
+@media (max-width: 959px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    margin: 0; }
+    .header-top {
+      padding: 0;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .contacts {
   padding: 0; }
@@ -874,12 +886,6 @@ hr {
     display: none; }
   .loupe {
     display: none; }
-  .header {
-    margin: 15px 0; }
-    .header-top {
-      padding: 0;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
   .logo-box {
     position: absolute;
     z-index: 1;
@@ -952,7 +958,7 @@ hr {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      top: 60px;
+      top: 100px;
       left: 0;
       right: 0;
       z-index: 999;
@@ -1159,7 +1165,7 @@ hr {
     .section-daily-tours {
       padding-bottom: 170px; }
     .section-title {
-      font-size: 26px; }
+      font-size: 41.6px; }
   .hero-title {
     padding-top: 60px;
     font-size: 63px; }
