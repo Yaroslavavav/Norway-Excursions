@@ -17,17 +17,18 @@
       slidesPerView: 1,
       spaceBetween: 10
     },
-    // when window width is <= 480px
+    // when window width is  <= 480px 
     480: {
       slidesPerView: 1,
       spaceBetween: 20
+
     },
     // when window width is <= 640px
     640: {
       slidesPerView: 2,
       spaceBetween: 30
     },
-    1240: {
+    1140: {
       slidesPerView: 3,
       spaceBetween: 20
     }

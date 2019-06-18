@@ -1,6 +1,7 @@
 .swiper-container {
   width: 100%;
   height: 100%;
+  overflow: visible;
 }
 .swiper-slide {
   text-align: center;
@@ -46,16 +47,16 @@
   background-color: $body-secondary-color;
   &:focus {
    outline: none;
-  }
-  &:hover {
-    cursor: pointer;
-  }
+ }
+ &:hover {
+  cursor: pointer;
+}
 }
 
 .swiper-button-pre.popular-tours {
   display: flex;
   justify-content: center;
-   margin-top: 10px;
+  margin-top: 10px;
   position: absolute;
   align-items: center;
   width: 46px;
@@ -64,10 +65,10 @@
   background-color: $body-secondary-color;
   &:focus { 
    outline: none;
-  }
-  &:hover {
-    cursor: pointer;
-  }
+ }
+ &:hover {
+  cursor: pointer;
+}
 }
 
 
@@ -92,10 +93,10 @@
   background-color: $body-secondary-color;
   &:focus {
    outline: none;
-  }
-  &:hover {
-    cursor: pointer;
-  }
+ }
+ &:hover {
+  cursor: pointer;
+}
 }
 
 .swiper-button-pre.reviews {
@@ -110,10 +111,10 @@
   position: absolute;
   &:focus { 
    outline: none;
-  }
-  &:hover {
-    cursor: pointer;
-  }
+ }
+ &:hover {
+  cursor: pointer;
+}
 }
 
 .arrows-box-reviews {
@@ -135,32 +136,44 @@
   
 }
 
+.swiper-pagination.popular-tours {
+  display: none;
+}
+
 @media (max-width: 959px) {
   .arrows-box-popular-tours {
     display: none;
   }
   .swiper-button-pre.reviews {
-  left: 43%;
+    left: 43%;
   }
   .swiper-button-nex.reviews {
-  right: 43%;
+    right: 43%;
   }
+  .swiper-pagination.popular-tours {
+    display: block;
+    bottom: -30px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #FF0032;
+  }
+
 }
 
 @media (max-width: 730px ) {
-   .swiper-button-pre.reviews {
+ .swiper-button-pre.reviews {
   left: 41%;
-  }
-  .swiper-button-nex.reviews {
+}
+.swiper-button-nex.reviews {
   right: 41%;
-  }
+}
 }
 
 @media (max-width: 640px ) {
-   .swiper-button-pre.reviews {
+ .swiper-button-pre.reviews {
   left: 33%;
-  }
-  .swiper-button-nex.reviews {
+}
+.swiper-button-nex.reviews {
   right: 33%;
-  }
+}
 }
