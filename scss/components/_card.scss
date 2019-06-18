@@ -1,5 +1,4 @@
 .card {
-	max-width: 260px;
 	overflow: hidden;
 	border-radius: 30px;
 	background-color: $body-secondary-color;
@@ -32,8 +31,8 @@
     }
   }
   &-daily-tours {
-    border: 1px solid #000;
     margin-bottom: 35px;
+    box-shadow: 1px 8px 13px -4px rgba(0,0,0,0.35);
   }
   &-review {
   	display: flex;
@@ -190,10 +189,4 @@
   text-decoration: underline;
   font-weight: $bold;
   text-align: right;
-}
-
-@media  (max-width: 959px) {
-  .swiper-slide.mobile {
-    width: 50%;
-  }
 }

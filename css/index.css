@@ -441,7 +441,6 @@ hr {
     margin: 0; }
 
 .card {
-  max-width: 260px;
   overflow: hidden;
   border-radius: 30px;
   background-color: #fff;
@@ -476,8 +475,9 @@ hr {
       -o-object-fit: cover;
       object-fit: cover; }
   .card-daily-tours {
-    border: 1px solid #000;
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    -webkit-box-shadow: 1px 8px 13px -4px rgba(0, 0, 0, 0.35);
+    box-shadow: 1px 8px 13px -4px rgba(0, 0, 0, 0.35); }
   .card-review {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -645,10 +645,6 @@ hr {
   text-decoration: underline;
   font-weight: 700;
   text-align: right; }
-
-@media (max-width: 959px) {
-  .swiper-slide.mobile {
-    width: 50%; } }
 
 .search-box {
   margin-bottom: 50px;
