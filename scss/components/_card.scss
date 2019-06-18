@@ -1,8 +1,14 @@
+$card-hover-color:         #FFDCE5;
+
 .card {
 	overflow: hidden;
 	border-radius: 30px;
 	background-color: $body-secondary-color;
   flex-grow: 1;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($card-hover-color, 0.9);
+  }
   &-body {
     display: flex;
     flex-direction: column;

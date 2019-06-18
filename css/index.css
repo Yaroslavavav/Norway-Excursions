@@ -453,6 +453,9 @@ hr {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1; }
+  .card:hover {
+    cursor: pointer;
+    background-color: rgba(255, 220, 229, 0.9); }
   .card-body {
     display: -webkit-box;
     display: -ms-flexbox;
