@@ -413,7 +413,6 @@ hr {
   padding: 20px 0;
   text-align: center;
   margin: 0 auto;
-  margin-top: 50px;
   color: #fff; }
   .button:hover {
     background-color: #FFF;
@@ -454,8 +453,7 @@ hr {
   -ms-flex-positive: 1;
   flex-grow: 1; }
   .card:hover {
-    cursor: pointer;
-    background-color: rgba(255, 220, 229, 0.9); }
+    cursor: pointer; }
   .card-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -487,17 +485,19 @@ hr {
     margin-bottom: 35px;
     -webkit-box-shadow: 1px 8px 13px -4px rgba(0, 0, 0, 0.35);
     box-shadow: 1px 8px 13px -4px rgba(0, 0, 0, 0.35); }
-  .card-review {
+  .card-reviews {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: 20px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 0 15px;
+    background-color: #fff;
+    border-radius: 40px; }
   .card-breadcrumbs {
     color: #888EA0;
     font-size: 13px;
@@ -597,11 +597,6 @@ hr {
 .rating_block .label_rating:hover ~ .label_rating,
 .rating_block input[type="radio"]:checked ~ .label_rating {
   background-position: 50% -25px; }
-
-.card-reviews {
-  width: 430px;
-  background-color: #fff;
-  border-radius: 40px; }
 
 .card-body-reviews {
   display: -webkit-box;
@@ -720,7 +715,7 @@ hr {
 @media (max-width: 639px) {
   .search-cell {
     width: 100%;
-    margin-top: 10px; } }
+    margin-top: 20px; } }
 
 .grid {
   display: -webkit-box;
@@ -1053,7 +1048,7 @@ hr {
     font-weight: 700;
     margin-bottom: 65px; }
   .section-hero, .footer-hero {
-    padding: 0;
+    padding: 215px 0;
     color: #fff; }
   .section-popular-tours, .footer-popular-tours {
     background-color: #F2F7FF;
@@ -1066,6 +1061,9 @@ hr {
   .section-reviews, .footer-reviews {
     background-color: #F2F7FF;
     padding-bottom: 90px; }
+
+.section-content {
+  margin-bottom: 50px; }
 
 .background > img {
   display: block;
@@ -1102,14 +1100,12 @@ hr {
 .hero-title {
   font-size: 90px;
   font-weight: 700;
-  text-align: center;
-  padding-top: 215px; }
+  text-align: center; }
 
 .hero-content {
   text-align: center;
   max-width: 650px;
-  margin: 0 auto;
-  padding-bottom: 215px; }
+  margin: 0 auto; }
 
 .hero-title {
   font-size: 90px;

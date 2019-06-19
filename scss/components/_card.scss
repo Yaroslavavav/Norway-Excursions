@@ -7,7 +7,6 @@ $card-hover-color:         #FFDCE5;
   flex-grow: 1;
   &:hover {
     cursor: pointer;
-    background-color: rgba($card-hover-color, 0.9);
   }
   &-body {
     display: flex;
@@ -40,11 +39,13 @@ $card-hover-color:         #FFDCE5;
     margin-bottom: 35px;
     box-shadow: 1px 8px 13px -4px rgba(0,0,0,0.35);
   }
-  &-review {
+  &-reviews {
   	display: flex;
   	align-items: center;
-  	padding-bottom: 20px;
   	justify-content: space-between;
+    margin: 0 15px;
+  background-color: $body-secondary-color;
+  border-radius: 40px;
   }
   &-breadcrumbs {
   	color: $breadcrumbs-color;
@@ -143,11 +144,6 @@ $card-hover-color:         #FFDCE5;
 
 
 
-.card-reviews {
-  width: 430px;
-  background-color: $body-secondary-color;
-  border-radius: 40px;
-}
 
 .card-body-reviews {
   display: flex;

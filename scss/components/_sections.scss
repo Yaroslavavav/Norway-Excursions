@@ -10,7 +10,7 @@
 		margin-bottom: 65px;
 	}
 	&-hero {
-		padding: 0;
+		padding: 215px 0;
 		color: $body-secondary-color;
 	}
 	&-popular-tours {
@@ -30,6 +30,10 @@
 	}
 }
 
+
+.section-content {
+	margin-bottom: 50px;
+}
 
 
 .background > img {
@@ -69,14 +73,12 @@
 	font-size: $hero-title-fs;
 	font-weight: $bold;
 	text-align: center;
-	padding-top: 215px;
 }
 
 .hero-content {
 	text-align: center;
 	max-width: 650px;
 	margin: 0 auto;
-	padding-bottom: 215px;
 }
 
 .hero-title {
