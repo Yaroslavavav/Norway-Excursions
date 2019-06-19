@@ -1,4 +1,5 @@
 $card-hover-color:         #FFDCE5;
+$card-border-radius-each:                 40px;
 
 .card {
 	overflow: hidden;
@@ -20,9 +21,20 @@ $card-hover-color:         #FFDCE5;
       height: 175px;
     }
     &-we-are {
-      height: 170px;
-      width: 255px;
-
+      width: 100%;
+      overflow: hidden;
+      &.left-up {
+        border-radius: $card-border-radius-each 0 0 0;
+      }
+      &.right-up {
+       border-radius: 0 $card-border-radius-each 0 0;    
+      }
+      &.left-bottom {
+         border-radius: 0 0 0 $card-border-radius-each;
+      }
+      &.right-bottom {
+        border-radius: 0 0 $card-border-radius-each 0;
+      }
       &>img {
         width: 100%;
         height: 100%;
@@ -44,8 +56,8 @@ $card-hover-color:         #FFDCE5;
   	align-items: center;
   	justify-content: space-between;
     margin: 0 15px;
-  background-color: $body-secondary-color;
-  border-radius: 40px;
+    background-color: $body-secondary-color;
+    border-radius: 40px;
   }
   &-breadcrumbs {
   	color: $breadcrumbs-color;
@@ -76,22 +88,6 @@ $card-hover-color:         #FFDCE5;
   	color: $card-secondary-color;
   }
 }
-
-.we-are-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.we-are-text {
-  max-width: 497px;
-  text-align: left;
-  color: $we-are-text-color;
-  &>p {
-    padding-bottom: 30px;
-  }
-}
-
 
 .footer-links {
   color: black;

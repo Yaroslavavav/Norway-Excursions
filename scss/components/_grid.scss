@@ -1,4 +1,4 @@
-$card-border-radius-each:                 40px;
+
 
 
 .grid {
@@ -17,27 +17,30 @@ $card-border-radius-each:                 40px;
 	display: flex;
 	flex-wrap: wrap;
 	width: 50%;
+	margin: 0 -9px;
+}
+
+.we-are-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.we-are-text {
+  width: 50%;
+  text-align: left;
+  color: $we-are-text-color;
+  &>p {
+    padding-bottom: 30px;
+  }
 }
 
 .grid-item.we-are {		
 	overflow: hidden;
-  &:nth-child(1) {
-    border-radius: $card-border-radius-each 0 0 0;
-  }
-  &:nth-child(2) {
-    border-radius: 0 $card-border-radius-each 0 0;
-  }
-  &:nth-child(3) {
-    border-radius: 0 0 0 $card-border-radius-each;
-  }
-  &:nth-child(4) {
-    border-radius: 0 0 $card-border-radius-each 0;
-  }
-  &:nth-child(even) {
-  	margin-left: 18px;
-  }
+	width: 50%;
+  padding: 0 9px;
 	&.vertical-margin {
-			padding-top: 18px;
+			padding-top: 15px;
 		}
 }
 
@@ -64,11 +67,40 @@ $card-border-radius-each:                 40px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
+  .left-content {
+	margin: 0 -6px;
+	width: 55%;
+}
+
+.we-are-text {
+	width: 45%;
+}
+
+.grid-item.we-are {		
+  padding: 0 6px;
+	&.vertical-margin {
+			padding-top: 10px;
+		}
+}
+
 }
 
 @media (max-width: 640px) {
 	.grid-col-4 > .grid-item.daily-tours {
    width: 100%;
 }
-	
+
+.we-are-content {
+	flex-wrap: wrap;
+}
+
+	  .left-content {
+	margin: 0 -6px;
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.we-are-text {
+	width: 100%;
+ }
 }
